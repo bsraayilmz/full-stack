@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <!--Detaylı bilgi için: HTML FORMS - w3schools
+    register.php dosyasındaki bilgilerin backend tarafında kullanılacağını gösterir.
+    Amaç: Bir form oluşturup, form içerisinde belirli elemanlara ait kullanıcılardan bilgileri toplamak ve servera göndermek. Ardından,Server tarafında yazmış olduğumuz register.php dosyası içerisindeki bilgileri istenilen şekilde kullanılmaktadır.
+    -->
+    <form action="register.php">
+      <div>
+        <label for="name">Adınız</label>
+        <input type="text" id="name" />
+      </div>
+      <div>
+        <label for="surname">Surname</label>
+        <input type="text" id="surname" />
+      </div>
+      <div>
+        <label for="passw">Password</label>
+        <input type="password" id="passw" />
+      </div>
+      <div>
+        <label for="textArea">Bölümünüz/Okulunuz</label>
+        <textarea id="textArea"></textarea>
+      </div>
+      <div>
+        <p>Yetkinliklerim</p>
+        <label for="html">HTML</label>
+        <!--name bilgisi aynı grupta olduklarını doğrular.-->
+        <input type="radio" id="html" name="programming" />
+        <label for="css">CSS</label>
+        <input type="radio" id="css" name="programming" />
+        <label for="js">JavaScript</label>
+        <input type="radio" id="js" name="programming" />
+      </div>
+      <br /><br />
+      <div>
+        <label for="checkbox">Onaylıyorum</label>
+        <input type="checkbox" id="checkbox" />
+      </div>
+      <div>
+        <label for="cities">İkametgah</label>
+        <select id="cities">
+          <option value="35">İzmir</option>
+          <option value="34">İstanbul</option>
+          <option value="45">Manisa</option>
+        </select>
+      </div>
+      <div>
+        <label for="posta">E-mail</label>
+        <input type="email" id="posta" />
+      </div>
+      <button type="submit">Kaydet</button>
+    </form>
+  </body>
+</html>

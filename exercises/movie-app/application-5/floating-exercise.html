@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating Exercise</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      header,
+      footer {
+        height: 80px;
+        background-color: #ff8a8a;
+      }
+      header h1,
+      footer h1 {
+        padding: 25px;
+        color: aliceblue;
+      }
+      .buttons a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        margin: 20px;
+        background-color: #cce0ac;
+        padding: 10px;
+      }
+      .buttons a:hover {
+        background-color: #f0eaac;
+        color: #ff8a8a;
+        cursor: pointer;
+      }
+      .buttons {
+        float: left;
+        width: 33%;
+        margin: 10px 5px;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .clearfix {
+        width: 100%;
+      }
+      .explanation {
+        width: 66%;
+        float: left;
+      }
+      .explanation h1,
+      p {
+        margin: 20px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header</h1>
+    </header>
+    <main class="clearfix">
+      <div class="buttons">
+        <a href="#" class="html">HTML</a>
+        <a href="#" class="css">CSS</a>
+        <a href="#" class="js">JavaScript</a>
+      </div>
+      <div class="explanation">
+        <h1>Komple Web Geliştirme Eğitimi</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam neque
+          temporibus iusto odio cupiditate quis laborum aperiam soluta id cum.
+          Consequuntur neque dolorum eos iste quae ducimus labore nulla at
+          mollitia. Magni voluptates error nobis!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          porro placeat asperiores repellendus sunt similique saepe eum atque
+          at, ducimus reiciendis alias tempore qui!
+        </p>
+      </div>
+    </main>
+    <footer>
+      <h1>Footer</h1>
+    </footer>
+  </body>
+</html>

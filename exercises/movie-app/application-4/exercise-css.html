@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1 With Css</title>
+    <link rel="stylesheet" href="exercise-css.css" />
+  </head>
+  <body>
+    <!-- 
+    1.Sayfa başlığını ortalayıp font büyüklüğünü 16 px yapınız.
+    2.Tüm liste elemanlarının üstünü çizin ve zemin rengini #EBE645 yapınız. (internal-external css)
+    3.Sadece ilk 3 elemanın üstünü çizin ve zemin rengini #344CB7 yapınız. (inline css)
+    4.Tüm liste elemanlarının işaretini kaldırınız. -->
+    <header>
+      <h1>Web Geliştirme Yol Haritası</h1>
+      <ul style="list-style-type: none">
+        <li>
+          <input type="checkbox" name="learn" checked /> <del>HTML öğren</del>
+        </li>
+        <li><input type="checkbox" name="learn" checked />Css öğren</li>
+        <li>
+          <input type="checkbox" name="learn" checked />
+          <del>Javascript öğren</del>
+        </li>
+        <li style="background-color: #344cb7; text-decoration: none">
+          <input type="checkbox" name="learn" />
+          Backend dili öğren
+        </li>
+        <li style="background-color: #344cb7; text-decoration: none">
+          <input type="checkbox" name="learn" />
+          Angular/React öğren
+        </li>
+      </ul>
+    </header>
+  </body>
+</html>

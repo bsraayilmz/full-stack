@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display&Visibility</title>
+    <style>
+      .box {
+        height: 60px;
+        width: 60px;
+        display: inline-block;
+      }
+      #first {
+        background-color: aqua;
+      }
+      #second {
+        background-color: blueviolet;
+        display: none;
+        /* bu eleman ekranda görünmeyecektir. Direkt yok olacaktır */
+        visibility: none;
+        /* ekranda görünmeyecek fakat işgal ettiği yer boş kalacak. Hidden */
+      }
+      #third {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Her zaman tarayıcı var sayılanı ile hareket edilmeyebilir, bazu durumlarda elemanlar yan yana getirilmek istenebilir. Bu durumlarda, display özelliği kullanılması gerekir. -->
+    <!-- inline: a vb gibi davranır ve içeriği kadar yer kaplar width, height etki etmez. (yan yana) Padding üstten alttan etki etmez.
+     inline-block: width-height etki eder.
+     block: blok özelliği içerecektir. (alt alta) -->
+
+    <div id="container">
+      <div class="box" id="first">first</div>
+      <div class="box" id="second">second</div>
+      <div class="box" id="third">third</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Id-Class-Tags Selectors</title>
+    <style>
+      /* id tanımlamasında */
+      #page-title {
+        font-size: 35px;
+        border: 1px solid green;
+        color: purple;
+      }
+      /* inheritence  (border inherit edilemeyen bir property olduğundan dolayı yani bir alt kısmında bulunan elemente etki etmediğinden dolayı üst elementin özellikleri kullanılmak istendiğinde inherit keyword kullanılması gerekmektedir.) */
+      em {
+        border: inherit;
+      }
+      em {
+        color: initial;
+        /* inheritence olmasın istiyorum (color kalıtıma sahip bir property) */
+      }
+      /* class tanımlamasında: */
+      .subtitles {
+        font-size: 25px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1 id="page-title">Welcome To <em>FoodApp</em></h1>
+      </section>
+      <section>
+        <h2 class="subtitles">How can I manage my day?</h2>
+      </section>
+    </main>
+  </body>
+</html>

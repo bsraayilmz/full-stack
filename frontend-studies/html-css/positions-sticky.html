@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        height: 5000px;
+      }
+      .box {
+        padding: 10px;
+        border: 5px solid gray;
+        margin-bottom: 10px;
+      }
+      /* Fixed: Scroll'u aşağıya indirsek dahi, bulunduğu pozisyonda görülmeye devam eder. */
+      .navbar {
+        width: 100%;
+        background-color: green;
+      }
+      .content {
+        background-color: yellow;
+        position: sticky;
+        /* sayfa kaydırıldığı zaman sayfada sabit olarak bulunacak element, sayfanın ortasında bulunsa dahi belirtilen konumda sayfada bulunur. 
+        Bilgilendirme metinleri için kullanılır, genellikle.*/
+        top: 0;
+      }
+      .footer {
+        background-color: purple;
+        margin-bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- static | relative | fixed | absolute | sticky -->
+    <!-- inline / block : static (normal akış içerisinde konumlanması) -->
+    <!-- Alttaki hareket etmeden ortadakini hareket etirme durumunda static kullanılmaması gerekmektedir. 
+      
+     Relative: Dört köşeden hareket edebiliyor. Normal akışı bozmadan, yalnızca istenilen eleman istenilen konuma yerleşir.-->
+
+    <!-- Absolute: Eleman akıştan çıkar. Diğer elemanlar absolute değere sahip elemanı görmez. Sayfanın üst köşesine yerleşir. İstenilen konuma yerleşir (sayfanın en üstünden body etiketine göre konumlandırılır.) Eğer içerisinde bulunduğu elemana relative özelliği verilirse, konumlandırılmaısnı relative elemana göre yapar.
+     
+    z index: Elemanlar üst üste geldikleri zaman hangi eleman üste çıksın bunu z index ile belirliyoruz. Z-index büyük olan öne çıkar.
+
+    Fixed: Scroll'u aşağıya indirsek dahi, bulunduğu pozisyonda görülmeye devam eder.
+    -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio error
+      modi enim eveniet sunt sit obcaecati, vero quis nam? Non sunt commodi
+      necessitatibus ullam sapiente. Labore nihil laboriosam, tempora ratione
+      mollitia ut ipsam vitae cum quas porro? Ipsum tempora suscipit reiciendis
+      hic eaque distinctio provident! Culpa iure dolor nostrum suscipit qui illo
+      totam non at, fugiat maxime adipisci veritatis soluta cupiditate quisquam
+      corrupti itaque, sed et quasi recusandae laudantium possimus. Nemo aliquam
+      vero repellat impedit deleniti ipsum distinctio culpa maiores!
+    </p>
+    <div class="box navbar">Navbar</div>
+    <div class="box content">
+      Content
+      <button>Selam</button>
+    </div>
+    <div class="box footer">
+      <h2>Footer</h2>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio error
+      modi enim eveniet sunt sit obcaecati, vero quis nam? Non sunt commodi
+      necessitatibus ullam sapiente. Labore nihil laboriosam, tempora ratione
+      mollitia ut ipsam vitae cum quas porro? Ipsum tempora suscipit reiciendis
+      hic eaque distinctio provident! Culpa iure dolor nostrum suscipit qui illo
+      totam non at, fugiat maxime adipisci veritatis soluta cupiditate quisquam
+      corrupti itaque, sed et quasi recusandae laudantium possimus. Nemo aliquam
+      vero repellat impedit deleniti ipsum distinctio culpa maiores!
+    </p>
+  </body>
+</html>

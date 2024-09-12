@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating Images</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      img {
+        width: 300px;
+        float: right;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, eos
+      maiores. Rem sunt sint doloremque itaque nulla voluptatem mollitia
+      consequuntur!
+    </p>
+    <p class="clearfix">
+      <img src="../movie-app/application-4/features.jpeg" alt="" />
+      <span
+        >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, quae
+        adipisci rem provident sunt temporibus. Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Quia quos, nostrum eligendi impedit
+        magnam eum reiciendis veritatis, minima a provident vitae ex! Aspernatur
+        consectetur dicta officiis dolorem totam beatae sapiente!</span
+      >
+    </p>
+  </body>
+</html>

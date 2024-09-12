@@ -1,0 +1,342 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("buttons.css");
+* {
+  box-sizing: border-box;
+  /* içeriği boyut ne kadar küçülürse küçülsün sığdırıyor. */
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+  /* yumuşak geçiş sağlamak için */
+}
+.container {
+  width: 55vw;
+  margin: auto;
+}
+.col-3 {
+  width: 33.3%;
+  float: left;
+}
+.col-3-bold {
+  font-size: 25px;
+}
+.row {
+  margin-bottom: 40px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* MARGIN */
+#welcome {
+  position: relative;
+  width: 100%;
+  height: 1500px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(25, 24, 53, 0.2),
+      rgba(87, 92, 87, 0.3)
+    ),
+    url(../movies.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 90vh;
+  top: 10vh;
+}
+.welcomeMessage {
+  background-color: rgba(16, 16, 35);
+  opacity: 0.75;
+  color: #fff;
+  position: absolute;
+  padding: 45px;
+  border-radius: 25px;
+  word-spacing: 2px;
+  letter-spacing: 2.5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+}
+.welcomeMessage-title {
+  margin-bottom: 10px;
+  margin: auto;
+}
+#work {
+  text-align: center;
+  position: relative;
+  top: 15vh;
+}
+#work h1 {
+  font-size: 30px;
+}
+#work p,
+#work h1 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* Eleman ve köşeleri arasındaki boşluk: PADDING */
+.main-header {
+  background-color: #201e43;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  height: 10vh;
+  border-bottom: 1px solid #3a377b;
+}
+.main-nav {
+  display: inline-block;
+  width: calc(100% - 100px);
+  /* movieApp yazısının genişliğini çıkardığımızda her zaman istenilen yerde kalacaktır. alt satıra inmez. 74:movieApp genişliği */
+  text-align: right;
+  height: 35px;
+}
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+}
+.main-nav__item {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.main-header__logo {
+  text-decoration: none;
+  font-size: 22px;
+  color: #f7f7f8;
+}
+#sub-items {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  top: 20vh;
+}
+#sub-items .sub-items__texts {
+  display: inline-block;
+  font-size: 18px;
+  width: 20%;
+  text-align: center;
+  margin: 5px 35px 35px 35px;
+}
+#sub-items .sub-items__texts h2 {
+  font-size: 21px;
+}
+#font-icon::before {
+  width: 20%;
+  margin: 45px 35px 5px 35px;
+  color: #3a377b;
+  font-size: 25px;
+}
+.row-featuresView {
+  height: 500px;
+  position: relative;
+  top: 25vh;
+}
+.col-img {
+  width: 50%;
+  height: 450px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(25, 24, 53, 0.2),
+      rgba(87, 92, 87, 0.3)
+    ),
+    url("../film-making_q1vj.jpg");
+  background-color: lightskyblue;
+  background-position: top center;
+  background-size: cover;
+  margin: 0;
+  float: left;
+}
+.col-title {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 450px;
+  background-color: #f7f7f8;
+  vertical-align: top;
+  margin: 0;
+  text-align: left;
+  padding: 40px;
+}
+.col-title h3 {
+  font-size: 25px;
+  top: 10vh;
+  position: absolute;
+  left: 3.5vw;
+}
+.col-title p {
+  position: absolute;
+  font-size: 18px;
+  top: 18vh;
+  width: 80%;
+  word-spacing: 3px;
+  left: 3.5vw;
+}
+.col-a {
+  left: 3.5vw;
+  position: absolute;
+  top: 30vh;
+}
+.plan__title {
+  text-align: center;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix {
+  position: relative;
+  top: 25vh;
+  height: 500px;
+  margin: auto;
+}
+.freeplan,
+.recommended,
+.premium {
+  float: left;
+  text-align: center;
+  width: 33.3%;
+  padding: 20px 10px;
+  background-color: #fff;
+}
+.recommended_plan {
+  background-color: #201e43 !important;
+  color: #fff;
+  position: relative;
+  top: 8px;
+}
+button {
+  margin-top: 12px;
+  background-color: #f7f7f8;
+  color: #3a1078;
+  border-radius: 7px solid;
+  border-color: #f7f7f8;
+  font-size: 13px;
+}
+.plan_list {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+.plan_list li {
+  margin: 4px 0px;
+}
+
+.plans {
+  width: 90%;
+  margin: 0 auto;
+}
+.inner-plan {
+  background-color: #f7f7f8;
+  padding: 25px 15px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+  transition: box-shadow 0.6s;
+  border-radius: 25px;
+}
+.inner-plan:hover {
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 8px;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #3e4555;
+  font-size: 30px;
+}
+
+.plan__badge {
+  background-color: #fff;
+  color: #3a1078;
+  padding: 8px;
+  border: 8px;
+}
+.fa-chevron-circle-up {
+  position: fixed;
+  right: 20px;
+  bottom: 25px;
+  font-size: 25px;
+  transition: color 0.5s;
+}
+.fa-chevron-circle-up:hover {
+  color: #4e31aa;
+}
+.rates {
+  margin-top: 22vh;
+  width: 100%;
+  height: 15vh;
+  background-color: #201e43;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(87, 92, 87, 0.2),
+    rgba(25, 24, 53, 0.3)
+  );
+}
+.rates-content {
+  text-align: center;
+  padding: 19.73px;
+  color: #f7f7f8;
+  float: left;
+}
+.movies-cards {
+  margin-top: 10vh;
+  width: 100%;
+}
+.movie-box {
+  float: left;
+}
+.movie-box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.movie-box h3 {
+  float: left;
+  padding: 8px;
+}
+
+.card-container {
+  padding: 10px;
+}
+
+.card {
+  padding: 5px;
+  background-color: #f7f7f8;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 10px 10px 40px rgba(52, 58, 64, 0.1);
+  /* position: relative; */
+  /* top: 0; */
+  transition: all 0.3s;
+}
+.card:hover {
+  /* top: -10px; */
+  transform: translateY(-10px);
+}
+
+.card-image {
+  max-height: 350px;
+  border-radius: 50px;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+footer {
+  height: 15vh;
+  background-color: #201e43;
+}
+.footer-p {
+  text-align: center;
+  color: #f7f7f8;
+  padding: 35px;
+}

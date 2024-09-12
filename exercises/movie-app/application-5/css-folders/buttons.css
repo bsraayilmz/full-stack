@@ -1,0 +1,49 @@
+.btn {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: color 0.5s;
+}
+
+.btn-primary {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.btn-primary:hover {
+  color: #bcd6dc;
+}
+.btn-primary:active {
+  /* tıkladığımda rengi mora geri dönecek. */
+  color: #134b70;
+}
+.btn-secondary {
+  color: #134b70;
+  background-color: #eeeeee;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #eeeeee;
+}
+.btn-secondary::before {
+  content: none;
+}
+.btn-secondary:hover {
+  color: #bcd6dc;
+  background-color: #201e43;
+  border: 2px solid #201e43;
+}
+.btn-secondary-outline {
+  color: #eeeeee;
+  background-color: #134b70;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #134b70;
+}
+
+.btn-secondary-outline:hover {
+  color: #201e43;
+  background-color: #eeeeee;
+  border: 2px solid #201e43;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        /* içeriği boyut ne kadar küçülürse küçülsün sığdırıyor. */
+        margin: 0;
+      }
+      /* MARGIN */
+      #welcome {
+        background-color: pink;
+        margin: 25px;
+        /* bütün köşelerden */
+      }
+      #work {
+        background-color: yellow;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+
+        /* margin collapsion: ayrı ayrı belirtildiğinde her bir değer için margin bırakılır fakat, margin dendiğinde en büyük margin değeri seçilir. */
+
+        /* üst, sağ, alt, sol (saat yönünde) Kısayol */
+        /* margin: 20px, 10px, 30px, 50px; */
+
+        margin: auto;
+        /* tüm yönlerden sayfa genişliğine göre boşluk bırakır */
+      }
+
+      /* Eleman ve köşeleri arasındaki boşluk: PADDING */
+      .main-header {
+        background-color: bisque;
+        padding: 10px;
+      }
+      .main-nav {
+        display: inline-block;
+        width: calc(100% - 75px);
+        /* movieApp yazısının genişliğini çıkardığımızda her zaman istenilen yerde kalacaktır. alt satıra inmez. 74:movieApp genişliği */
+        text-align: right;
+      }
+      .main-nav__items {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      .main-nav__item {
+        display: inline-block;
+      }
+
+      /* BORDER */
+      h3 {
+        border: 4px solid black;
+        /* solid: düz çizgi */
+        /* border-top-width: 12px;... tüm detayları açıklayabiliriz. */
+        border-radius: 5px;
+        /* köşeleri yuvarlatma özelliği  */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="main-header">
+        <a href="">MovieApp</a>
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="">Home</a></li>
+            <li class="main-nav__item"><a href="">Movies</a></li>
+            <li class="main-nav__item"><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="welcome">
+        <h1>Welcome to MovieApp</h1>
+      </section>
+      <section id="work">
+        <h2>How it works?</h2>
+      </section>
+      <section>
+        <h3>Border Property</h3>
+      </section>
+    </main>
+  </body>
+</html>

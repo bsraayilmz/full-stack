@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selectors</title>
+    <style>
+      /* Attribute Selector */
+      /* a[target] {
+        background-color: aqua;
+      }
+      [class] {
+        background-color: yellow;
+      }
+      /* Attribute Value Selector */
+      /* [class="about"] {
+        /* sadece classı about olan seçilir
+        text-decoration: none;
+      } */
+
+      /* Attribute * Selector */
+      /* İçerisinde about class'ı olan tüm elemanları kapsa. about-container vb. kabul edilir.. */
+      /* [class*="about"] {
+        text-decoration: none;
+      } */
+      /* Attribute ~ Selector */
+      /* [class~="about"] {
+        /* İçerisinde about class'ı olan tüm elemanları kapsa, yalnız about olmalı, about-container vb. kabul edilmez.
+        text-decoration: none;
+      }  */
+
+      /* Attribute | Selector */
+      /* Başlangıcında about class'ı olan tüm elemanları kapsa, about-container vb. kabul edilir. Arada boşluk ve başka eleman kabul etmez. */
+      /* [class|="about"] {
+        text-decoration: none;
+      } */
+
+      /* Attribute ^ Selector */
+      /* Başlangıcında about class'ı olan tüm elemanları kapsa, about-container vb. kabul edilir. Arada boşluk ve başka eleman kabul edilir. */
+      /* [class^="about"] {
+        text-decoration: none;
+      } */
+
+      /* Attribute $ Selector */
+      /* Sonunda about class'ı olan tüm elemanları kapsa*/
+      [class$="about"] {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="" target="_blank">Home</a>
+      <a href="" class="container about">About</a>
+      <a href="" class="contact">Contact</a>
+    </nav>
+  </body>
+</html>

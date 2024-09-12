@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      .box {
+        padding: 10px;
+        border: 5px solid gray;
+        margin-bottom: 10px;
+      }
+      .navbar {
+        background-color: green;
+      }
+      .content {
+        top: 50px;
+        left: 40px;
+        position: relative;
+        background-color: yellow;
+        /* position: absolute; */
+        /* diğer elemanlar contenti absolute olduğunda görmez. Content diğer elemanları görür. */
+      }
+      .footer {
+        background-color: purple;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0;
+        width: 100%;
+      }
+      .button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- static | relative | fixed | absolute | sticky -->
+    <!-- inline / block : static (normal akış içerisinde konumlanması) -->
+    <!-- Alttaki hareket etmeden ortadakini hareket etirme durumunda static kullanılmaması gerekmektedir. 
+      
+     Relative: Dört köşeden hareket edebiliyor. Normal akışı bozmadan, yalnızca istenilen eleman istenilen konuma yerleşir.-->
+
+    <!-- Absolute: Eleman akıştan çıkar. Diğer elemanlar absolute değere sahip elemanı görmez. Sayfanın üst köşesine yerleşir. İstenilen konuma yerleşir (sayfanın en üstünden body etiketine göre konumlandırılır.) Eğer içerisinde bulunduğu elemana relative özelliği verilirse, konumlandırılmaısnı relative elemana göre yapar. -->
+    <div class="box navbar">Navbar</div>
+    <div class="box content">
+      Content
+      <button>Selam</button>
+    </div>
+    <div class="box footer">
+      <h2>Footer</h2>
+    </div>
+  </body>
+</html>

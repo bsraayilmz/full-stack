@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+  </head>
+  <!--Deprecated: Eski Versiyonlarında kaldığını ifade eder.-->
+  <body>
+    <!--3*4'lük bir tablo oluşturulacak.-->
+    <table style="width: 75%">
+      <thead>
+        <tr>
+          <!--Satır başlıkları-->
+          <th>Id</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th><time datetime="05-08-2021">Date</time></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--row-->
+        <tr>
+          <!--ilk satır için: 4 column oluşturuldu.-->
+          <!--column-->
+          <td>1</td>
+          <td>Elite Laptop</td>
+          <td>36000</td>
+          <td><time datetime="05-08-2021">2021</time></td>
+        </tr>
+        <tr>
+          <!--ikinci satır için: 4 column oluşturuldu.-->
+          <!--column-->
+          <td>2</td>
+          <td>HP Laptop</td>
+          <td>30000</td>
+          <td><time datetime="05-10-2024">2024</time></td>
+        </tr>
+        <tr>
+          <!--üçüncü satır için: 4 column oluşturuldu.-->
+          <!--column-->
+          <td>3</td>
+          <td>Casper Laptop</td>
+          <!--colspan: columnları birleştirmek amacıyla, 2 columnun yaptığı işi yap.-->
+          <td colspan="2">28000 - <time datetime="05-08-2023">2023</time></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

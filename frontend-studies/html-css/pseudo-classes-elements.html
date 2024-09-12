@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Classes-Elements</title>
+    <style>
+      a {
+        border: 1px solid gray;
+        padding: 5px 8px;
+        display: inline-block;
+        text-decoration: none;
+        width: 40px;
+        text-align: center;
+      }
+      a:link {
+        color: red;
+      }
+      a:visited {
+        color: green;
+      }
+      a:hover {
+        color: white;
+        background-color: pink;
+      }
+      a:active {
+        color: red;
+      }
+      div:hover p {
+        /* div'e hover olunduğunda p etiketi için css uygula */
+        background-color: yellow;
+        display: block;
+      }
+      div p {
+        display: none;
+      }
+      p.pseudo-elements::first-line {
+        font-weight: bold;
+        color: blue;
+      }
+      p::selection {
+        background-color: purple;
+        /* seçilen etiketleri (yalnızca p etiketi içerisinde olanların arka planı mor olur.) */
+      }
+      p::after {
+        /*paragrafın sonuna ekle.*/
+        content: "\261D"; /*emoji Html emoji kısmından alındı. (Hex karşılığı) */
+        font-size: 22px;
+      }
+      /* a:link --> ziyaret edilmemiş link */
+      /* a:visited --> ziyaret edilmiş link */
+
+      /* pseude elements */
+    </style>
+  </head>
+  <body>
+    <!-- pseudo classes: sayfayı ziyaret edip etmeme vb. durumları atamak için kullanılır. -->
+    <a href="box-sizing1.html">Ana Sayfa</a>
+    <a href="margin-border-padding2.html">Ürünler</a>
+    <a href="navigation-bar1.html">Hakkımızda</a>
+
+    <div>
+      Click Here!
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto rem
+        et voluptatum nihil culpa dolores, inventore voluptate aut impedit
+        nostrum?
+      </p>
+    </div>
+
+    <!-- pseude elements: elementin belirli bir kısmının durumuna müdahele etmiş olunur. -->
+    <p class="pseudo-elements">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam et dolorem
+      incidunt officia. Consequatur repellat assumenda facilis voluptates
+      aperiam doloremque vero voluptate tempore nesciunt doloribus!
+    </p>
+    <p class="pseudo-elements">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam et dolorem
+      incidunt officia. Consequatur repellat assumenda facilis voluptates
+      aperiam doloremque vero voluptate tempore nesciunt doloribus!
+    </p>
+  </body>
+</html>

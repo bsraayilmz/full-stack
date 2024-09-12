@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating Process</title>
+    <style>
+      #container {
+        /* float: right; */
+        /* Üç adet block özelliğine sahip box sağ tarafta konumlanır. */
+
+        background-color: blanchedalmond;
+      }
+      .box {
+        width: 150px;
+        height: 150px;
+        background-color: brown;
+        float: right;
+        /* hepsi sağa  yanaşıp inline özelliğini gösterir */
+      }
+      #box3 {
+        float: left;
+        /* box3 solda diğer ikisi sağda yatay eksende */
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Yöntem 2: Clear Fix -->
+    <div id="container" class="clearfix">
+      <div class="box" id="box3">Kutu1</div>
+      <div class="box">Kutu2</div>
+      <div class="box">Kutu3</div>
+      <!-- <div style="clear: both"></div> -->
+      <!-- YÖntem 1: oluşturmuş olduğumuz float propertysini temizleyip görünür kılmak için -->
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facere totam
+      cupiditate vero corrupti quasi sint obcaecati necessitatibus repudiandae
+      tempora.
+    </p>
+  </body>
+</html>

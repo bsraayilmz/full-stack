@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--unordered list: ul-->
+    <ul style="list-style-type: circle">
+      <!--list-style-type ile madde başındaki ögeyi güncelleyebilirsin-->
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>
+        Item 3
+        <ul>
+          <!--İç içe liste tanımlarken li içerisinde ul tanımı gerekir.-->
+          <li>3.1</li>
+          <li>3.2</li>
+          <li>3.3</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!--ordered list: ol-->
+    <ol type="1" start="1">
+      <!--type ile 1,2,3 ya da A,B,C vb. ilerleyişi belirle. start ile ise nereden başlayacağını belirle -->
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+
+    <!--description list: dl, description title: dt, dd: description description-->
+    <dl>
+      <dt>Html Nedir?</dt>
+      <dd>Html Bir Programlama Dili Midir?</dd>
+    </dl>
+  </body>
+</html>

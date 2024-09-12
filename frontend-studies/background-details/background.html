@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .background-template {
+        /* kullanıcının gördüğü alanın yüzde yüzünü yükseklik ve genişlik olarak al */
+        height: 100vh;
+        width: 100vw;
+        background-color: white;
+        background-image: linear-gradient(
+            to bottom right,
+            rgb(255, 190, 51, 0.4),
+            rgb(255, 207, 102, 0.4)
+          ),
+          url("https://wallpapers.com/images/hd/photography-nature-background-8vq2ys56jw0yul0k.jpg");
+        background-attachment: fixed;
+        margin: 0;
+      }
+      .welcome {
+        position: absolute;
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        background-color: black;
+        transform: translate(-50%, -50%);
+      }
+      .prg-first {
+        text-align: center;
+        position: relative;
+        top: 10vh;
+        width: 70%;
+        margin: auto;
+      }
+      .prg-second {
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        position: relative;
+        top: 25vh;
+      }
+      .second-img {
+        position: relative;
+        top: 20vh;
+        bottom: 20vh;
+
+        height: 50vh;
+        width: 100vw;
+        background-position: center;
+        background-color: white;
+        background-size: cover;
+        background-image:  /*linear-gradient(
+            to bottom right,
+            rgb(255, 190, 51, 0.4),
+            rgb(255, 207, 102, 0.4)
+          ), */ url("bg-3.jpeg");
+        margin: 0;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-template">
+      <h1 class="welcome">Welcome to page!</h1>
+    </div>
+    <div class="prg-first">
+      <h3>Lorem, ipsum.</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tempore
+        non, repudiandae quas ratione perspiciatis. Laudantium ipsam repellat
+        iusto accusamus ab similique necessitatibus nisi iure enim
+        exercitationem illum commodi beatae sit quod quasi, totam incidunt,
+        magnam aliquam omnis non officiis dolorum aliquid quidem soluta.
+        Eveniet!
+      </p>
+    </div>
+    <div class="second-img">
+      <h1 class="welcome">Lorem, ipsum.</h1>
+    </div>
+    <div class="prg-second">
+      <h3>Lorem, ipsum.</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tempore
+        non, repudiandae quas ratione perspiciatis. Laudantium ipsam repellat
+        iusto accusamus ab similique necessitatibus nisi iure enim
+        exercitationem illum commodi beatae sit quod quasi, totam incidunt,
+        magnam aliquam omnis non officiis dolorum aliquid quidem soluta.
+        Eveniet!
+      </p>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>
